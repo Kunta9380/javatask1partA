@@ -6,13 +6,13 @@ this program counts the letters  and determine whether evenly or oddly diviscibl
 package Name;//the name of the folder
 
 import java.util.Arrays;
-import java.util.Scanner;// It is the easiest way to read input in a Java program
+import java.util.Scanner;
 
-public class counter_variables {
+public class Q1 {
 
 	public static void main(String[] args) {
 		
-		 String sname, display;
+		 String sname, show;
 		 int age;
 	      Scanner s = new Scanner(System.in);
 	      
@@ -23,9 +23,9 @@ public class counter_variables {
 	      age = s.nextInt();
 	      
 	      if(age%2 == 0) {//if there is no remainder then it is divisible
-	    	  display = "And your age is an even number";
+	    	  show= "And your age is an even number";
 	      } else {
-	    	 display = "And your age is an odd number";
+	    	 show = "And your age is an odd number";
 	      }
 	      
 	      
