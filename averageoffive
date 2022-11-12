@@ -4,25 +4,24 @@
  * */
 package Musembi;
 import java.util.Scanner;// It is the easiest way to read input in a Java program
-public class Average {
-	private static final DecimalFormat df=new DecimalFormat("0.00");
-	public static void main(String[]args)
+public class averageoffive {
+	
 	{//introduction of variables to to thir data types
-		int C_prog,data_structure,networking,Financial,entrepreurship, sum;
+		int C,data_structure,networkingfund,FinancialM,entrepreurship, total;
 		double average;
 		
 	Scanner input=new Scanner(System.in);//(System .in )user inputs  values
 	System.out.println("enter your programming marks");
-	C_prog=input.nextInt();// user inputs values
+	C=input.nextInt();// user inputs values
 	System.out.println("enter your data structure");
 	data_structure=input.nextInt();
 	System.out.println("enter your networking");
-	networking=input.nextInt();
+	networkingfund=input.nextInt();
 	System.out.println("enter your financial mnagment");
-	Financial=input.nextInt();
+	FinancialM=input.nextInt();
 	System.out.println("enter your entrepreuship");
 	entrepreurship=input.nextInt();
-	sum=C_prog+data_structure+networking+Financial+entrepreurship;
+	total=C+data_structure+networkingfund+FinancialM+entrepreurship;
 	average=sum/5;
 	System.out.printf(" your average is:"+average);
 	
