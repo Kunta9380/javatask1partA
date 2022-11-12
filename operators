@@ -2,15 +2,15 @@
  *  i am presenting  a program that  user chooses operation for calculartion
 
 */
-package Name;//folder name
+package Musembi;//folder name
 
 import java.util.Scanner;
 
-public class calculator {
+public class operators {
 
 	public static void main(String[] args) {
 		int result=0, value1, value2;
-		char operation = ' ';
+		char compute = ' ';
 
 		Scanner input = new Scanner(System.in);
 		System.out.println("enter the first value");
@@ -19,20 +19,20 @@ public class calculator {
 		value2 = input.nextInt();
 		System.out.println("choose an operation between multiply,add,divide and subtract ");
 		input.nextLine();//user is allowed to input values
-		operation = input.nextLine().charAt(0);//This returns the character at the specified index in a string
-		System.out.print(operation);
-		if (operation == '+') {
+		compute = input.nextLine().charAt(0);//This returns the character at the specified index in a string
+		System.out.print(compute);
+		if (compute == '+') {
 			result = value1 + value2;
-			System.out.println(operation);
-		} else if (operation == '*') {
+			System.out.println(compute);
+		} else if (compute == '*') {
 			result = value1 * value2;
-			System.out.println(operation);
-		} else if (operation == '/') {
+			System.out.println(compute);
+		} else if (compute == '/') {
 			result = value1 / value2;
-			System.out.println(operation);
-		} else if (operation == '-') {
+			System.out.println(compute);
+		} else if (compute == '-') {
 			result = value1 - value2;
-			System.out.println(operation);
+			System.out.println(compute);
 		} 
 		System.out.printf("%d\n",result);//%d shows the  value outputed is a double
 	}
